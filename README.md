@@ -18,7 +18,7 @@ There are two wrappers in this repository:
 
 ## Installing the python wrapper
 
-1. `pip install trajectory_smoothing @ https://github.com/balakumar-s/trajectory_smoothing.git`
+1. `pip install trajectory_smoothing@git+https://github.com/balakumar-s/trajectory_smoothing.git`
 2. Look at `examples/smooth_example.py` for an example which will draw a plot as below:
 
 ![Plot](plot.png)

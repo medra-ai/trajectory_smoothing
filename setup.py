@@ -12,7 +12,7 @@ except ImportError:
 
 setup(
     name="trajectory_smoothing",          # <- The package name (e.g. for PyPI) goes here
-    version="0.0.1",        # <- The current version number.
+    version="0.2",        # <- The current version number.
     author="Balakumar Sundaralingam",
     author_email="balakumar-s",
     description="Package produces time-optimal interpolation of a input trajectory",

@@ -1,5 +1,6 @@
 import sys
 
+
 try:
     from skbuild import setup
     import nanobind
@@ -17,7 +18,7 @@ setup(
     author_email="balakumar-s",
     description="Package produces time-optimal interpolation of a input trajectory",
     url="https://github.com/balakumar-s/trajectory_smoothing",
-    python_requires=">=3.7",
+    python_requires=">=3.8",
     license="BSD",
     packages=['trajectory_smoothing'],     # <- The package will install one module named 'my_ext'
     package_dir={'': 'src'}, # <- Root directory containing the Python package

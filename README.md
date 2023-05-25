@@ -21,7 +21,7 @@ There are two wrappers in this repository:
 You can add this package as a dependency to your python package by adding the following to your
 setup.cfg: 
 
-`trajectory_smoothing @ https://github.com/balakumar-s/trajectory_smoothing/raw/main/dist/trajectory_smoothing-0.2-cp38-cp38-linux_x86_64.whl`
+`trajectory_smoothing @ https://github.com/balakumar-s/trajectory_smoothing/raw/main/dist/trajectory_smoothing-0.3-cp38-cp38-linux_x86_64.whl`
 
 ## Installing the python wrapper
 

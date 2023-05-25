@@ -41,7 +41,7 @@ def example_class():
         ax[3].set_xlabel("Time (s)")
 
         plt.tight_layout()
-        plt.show()
+        plt.savefig("t.png")
 
 
 if __name__ == "__main__":

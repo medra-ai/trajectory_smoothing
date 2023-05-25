@@ -31,8 +31,8 @@ class TrajectorySmoother:
     def __init__(
         self,
         dof: int,
-        max_acceleration: np.array,
         max_velocity: np.array,
+        max_acceleration: np.array,
         max_deviation: float,
     ):
         self.dof = dof
@@ -43,13 +43,14 @@ class TrajectorySmoother:
     def smooth_interpolate(
         self,
         trajectory: np.ndarray,
-        traj_dt: float = 0.05,
+        traj_dt: float = 0.001,
         interpolation_dt: float = 0.01,
-        max_tsteps: int = -1,
+        max_tsteps: Optional[int] = None,
     ) -> SmoothResult:
         st_time = time.time()
         traj = trajectory.astype(dtype=np.float64)
-
+        if max_tsteps is None:
+            max_tsteps = -1
         (out0, out1, out2, out3, out4, out5, out6) = smooth(
             self.dof,
             interpolation_dt,

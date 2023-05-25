@@ -260,7 +260,7 @@ bool Trajectory::integrateForward(list<TrajectoryStep> &trajectory, double accel
 		}
 		else if(pathVel < 0.0) {
 			valid = false;
-			cout << "error" << endl;
+			//cout << "error" << endl;
 			return true;
 		}
 
@@ -339,7 +339,7 @@ void Trajectory::integrateBackward(list<TrajectoryStep> &startTrajectory, double
 			
 			if(pathVel < 0.0) {
 				valid = false;
-				cout << "Error while integrating backward: Negative path velocity" << endl;
+				//cout << "Error while integrating backward: Negative path velocity" << endl;
 				endTrajectory = trajectory;
 				return;
 			}
@@ -362,7 +362,7 @@ void Trajectory::integrateBackward(list<TrajectoryStep> &startTrajectory, double
 	}
 
 	valid = false;
-	cout << "Error while integrating backward: Did not hit start trajectory" << endl;
+	//cout << "Error while integrating backward: Did not hit start trajectory" << endl;
 	endTrajectory = trajectory;
 }
 

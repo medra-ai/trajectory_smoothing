@@ -1,11 +1,8 @@
-#include <nanobind/nanobind.h>
+#include<pybind11/pybind11.h>
+#include<pybind11/eigen.h>
 #include <Eigen/Core>
 #include "Trajectory.h"
 #include "Path.h"
-#include <nanobind/ndarray.h>
-#include <nanobind/eigen/dense.h>
-#include <nanobind/stl/tuple.h>
-
 
 
 using namespace std;
@@ -146,7 +143,7 @@ bool test(){
   return trajectory.isValid();
 }
 
-NB_MODULE(trajectory_smoothing_impl, m) {
+PYBIND11_MODULE(trajectory_smoothing_impl, m) {
     m.def("smooth", &smooth_waypoints);
     m.def("test", &test);
 }

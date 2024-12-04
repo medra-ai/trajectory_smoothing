@@ -1,5 +1,7 @@
-project(trajectory_smoothing)
 cmake_minimum_required(VERSION 3.18...3.22)
+project(trajectory_smoothing)
+set(CMAKE_OSX_DEPLOYMENT_TARGET "10.13")
+
 find_package(Python 3.8 COMPONENTS Interpreter Development.Module REQUIRED)
 
 if (NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)

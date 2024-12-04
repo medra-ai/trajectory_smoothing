@@ -147,6 +147,8 @@ bool test(){
 }
 
 NB_MODULE(trajectory_smoothing_impl, m) {
-    m.def("smooth", &smooth_waypoints);
-    m.def("test", &test);
+  nanobind::set_leak_warnings(false);
+
+  m.def("smooth", &smooth_waypoints);
+  m.def("test", &test);
 }
